@@ -1,0 +1,62 @@
+.navbar-nav .nav-link {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link.logout-link {
+  display: inline-block;
+  color: #dc3545;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-link.logout-link:hover {
+  color: #a71d2a;
+}
+
+.nav-link.logout-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #dc3545;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link.logout-link:hover::after {
+  width: 80%;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon:hover {
+  transform: rotate(90deg);
+}
