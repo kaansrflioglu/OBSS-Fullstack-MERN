@@ -39,7 +39,6 @@ const Login = () => {
           )}
 
           <form onSubmit={submit}>
-            {/* USERNAME */}
             <div className="form-floating mb-3">
               <input
                 type="text"
@@ -53,7 +52,6 @@ const Login = () => {
               <label htmlFor="username">Kullanıcı adı</label>
             </div>
 
-            {/* PASSWORD */}
             <div className="form-floating mb-4">
               <input
                 type="password"
